@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.logo {
+    background: rgb(245, 245, 245);
+    font-size: 30px;
+    font-weight: 700;
+    padding: 6px;
+    border: 2px solid rgb(30, 58, 138);
+    border-radius: 50%;
+}
+
+.logo-text-w {
+    color: rgb(30, 58, 138, 0.92);
+}
+
+.logo-text-m {
+    color: rgb(12, 74, 180, 0.75);
+}

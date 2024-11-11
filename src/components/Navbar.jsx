@@ -22,7 +22,7 @@ const Navbar = () => {
                     </div>
 
 
-                    <div className={`md:flex ${isOpen ? "block" : "hidden"} justify-between w-5/6 `}>
+                    <div className={`md:flex ${isOpen ? "block" : "hidden"} justify-between w-3/4 `}>
                         <div className="md:w-2/3 w-full flex justify-center md:border md:bg-blue-800  text-blue-100 rounded-2xl py-1">
                             <div className="flex flex-col md:flex-row text-center md:justify-between gap-1 md:mt-0 mt-8 ">
                                 <a href="#home" className="border-b-2  px-5 md:py-2 p-1 md:border-b-0 hover:bg-blue-900 hover:rounded-2xl">Home</a>

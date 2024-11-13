@@ -6,6 +6,9 @@ export default {
       fontFamily: {
         sans: ["Roboto", "sans-serif"],
       },
+      backgroundImage: {
+        "bubbles-img": "url('./src/assets/images/Bubbles.jfif')",
+      },
     },
   },
   plugins: [],

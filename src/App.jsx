@@ -5,6 +5,7 @@ import Features from "./components/Features";
 import Explore from "./components/Explore";
 import TestimonialList from "./components/TestimonialList";
 import GetStarted from "./components/GetStarted";
+import Questions from "./components/Questions";
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <Explore />
       <TestimonialList />
       <GetStarted />
+      <Questions />
     </>
   )
 }

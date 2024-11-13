@@ -19,11 +19,11 @@ const Hero = () => {
                     <img src="../src/assets/images/shopping-cart-1.avif" alt="a shopping cart filled with packages" className="w-1/5 -mt-5" />
                     <div className="flex flex-row items-center -mt-8 ms-auto w-1/2 -me-36">
                         <img src="../src/assets/images/wm-hero-img.jpg" alt="" className="w-1/2 -me-14" />
-                        <div className="-rotate-90 p-1 text-3xl bg-blue-900 rounded-tr-2xl">
+                        <div className="-rotate-90 p-1 text-3xl bg-gradient-to-r from-blue-900 to-blue-800 rounded-tr-2xl">
                             <p className="text-blue-950">WORLD MART</p>
                             <p className="text-blue-600">WORLD MART</p>
-                            <p className="text-blue-300">WORLD MART</p>
-                            <p className="text-blue-100">WORLD MART</p>
+                            <p className="text-blue-400">WORLD MART</p>
+                            <p className="text-blue-200">WORLD MART</p>
                         </div>
                     </div>
                 </div>

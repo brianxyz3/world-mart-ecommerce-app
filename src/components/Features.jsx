@@ -4,7 +4,7 @@ import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 
 const Features = () => {
     return (
-        <div className="flex justify-between bg-blue-800 text-blue-100 mt-6 md:mt-0 px-5">
+        <div className="relative flex justify-between bg-blue-800 text-blue-100 mt-6 md:-mt-7 px-5">
             <div className="py-10 w-3/5 text-lg">
                 <h3 className="text-4xl font-bold">Features & <h3 className="text-yellow-500">Benefits</h3></h3>
                 <p className="mb-5">Your go-to for rapid delivery, ensuring your <p>satisfaction at the speed of light.</p></p>

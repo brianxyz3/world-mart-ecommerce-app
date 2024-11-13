@@ -6,6 +6,7 @@ import Explore from "./components/Explore";
 import TestimonialList from "./components/TestimonialList";
 import GetStarted from "./components/GetStarted";
 import Questions from "./components/Questions";
+import Footer from "./components/Footer";
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <TestimonialList />
       <GetStarted />
       <Questions />
+      <Footer />
     </>
   )
 }

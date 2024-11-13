@@ -12,8 +12,8 @@ const Hero = () => {
                     <p>we've got you covered. Enjoy seamless browsing.</p>
                 </div>
                 <div className="relative">
-                    <button className="border rounded bg-blue-800 mr-2 py-1 px-5 text-blue-100">View Products</button>
-                    <button className="border border-blue-800 rounded py-1 px-5 text-blue-800 ml-2">Exciting Offers</button>
+                    <button className="border rounded bg-blue-800 mr-2 py-1 px-5 text-blue-100 hover:font-bold hover:px-6 hover:shadow-xl">View Products</button>
+                    <button className="border border-blue-800 rounded py-1 px-5 text-blue-800 ml-2 hover:font-bold hover:px-6 hover:shadow-xl">Exciting Offers</button>
                 </div>
                 <div className="hidden md:flex">
                     <img src="../src/assets/images/shopping-cart-1.avif" alt="a shopping cart filled with packages" className="w-1/5 -mt-5" />

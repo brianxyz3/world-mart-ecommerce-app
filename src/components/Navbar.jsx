@@ -18,7 +18,7 @@ const Navbar = () => {
                 <div className="flex justify-between mx-4 md:mx-10 mt-6 md:items-center">
                     {/* Logo */}
                     <div>
-                        <div className="logo"><span className="logo-text-w">W</span><span className="logo-text-m">M</span></div>
+                        <div className="logo w-24 text-4xl"><p className="logo-text-w">W</p><p className="logo-text-m">M</p></div>
                     </div>
 
 
@@ -40,7 +40,7 @@ const Navbar = () => {
                                 <ShoppingBagOutlined />
                             </IconButton>
                         </div>
-                        <div className="md:bg-blue-800 text-center text-blue-100 md:border md:rounded-3xl md:my-2 md:px-10 md:py-1">
+                        <div className="flex items-center md:bg-blue-800 text-center text-blue-100 md:border md:rounded-3xl md:my-2 md:px-10 md:py-1 hover:font-bold hover:text-blue-300 hover:my-1 hover:px-11 hover:shadow=xl">
                             <p><Login /> Login</p>
                         </div>
                     </div>

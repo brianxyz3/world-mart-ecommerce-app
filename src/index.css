@@ -5,11 +5,13 @@ body {
     overflow-x: hidden;
 }
 .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: rgb(245, 245, 245);
-    font-size: 30px;
-    font-weight: 700;
-    padding: 6px;
-    border: 2px solid rgb(30, 58, 138);
+    font-weight: 900;
+    border: 3px solid rgb(30, 58, 138);
+    aspect-ratio: 1;
     border-radius: 50%;
 }
 

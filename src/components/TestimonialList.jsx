@@ -1,11 +1,15 @@
+import { Search } from "@mui/icons-material";
 import ShowTestimonial from "./ShowTestimonial";
 
 const TestimonialList = () => {
     return (
         <div>
-            <div className="text-center">
-                <h3 className="text-4xl text-blue-800">Testimonials</h3>
-                <p className="text-gray-700">This is what our customers say about World Mart!</p>
+            <div className="flex justify-center text-gray-700">
+                <div className="text-center">
+                    <h3 className="text-4xl text-blue-800">Testimonials</h3>
+                    <p>This is what our customers say about World Mart!</p>
+                </div>
+                <Search />
             </div>
             <ShowTestimonial name="Bob"
                 testimony="World Mart has truly changed the way i shop online. The variety of products available is astonishing, and the prices are unbeatable. Whether I'm looking for electronics, clothing, I always find exactly what I need."

@@ -5,7 +5,7 @@ const Explore = () => {
             <div>
                 <img src="../src/assets/images/dyk-image.avif" alt="" className="rounded-md" />
             </div>
-            <div className="flex flex-col justify-between md:w-1/3 text-gray-800">
+            <div className="flex flex-col justify-between md:w-1/3 text-gray-800 dark:text-blue-200">
                 <div>
                     <h3 className="text-4xl font-bold">Did You Know?</h3>
                     <div className="my-4">At WorldMart, we're not just another shopping destination; we're your gateway to a world of convenience and quality. Founded on the principles of customer satisfaction and innovation, we strive to redefine your shopping experience.</div>

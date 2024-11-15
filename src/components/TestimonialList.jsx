@@ -4,7 +4,7 @@ import ShowTestimonial from "./ShowTestimonial";
 const TestimonialList = () => {
     return (
         <div>
-            <div className="flex justify-center mt-10 text-gray-700">
+            <div className="flex justify-center mt-10 text-gray-700 dark:text-blue-200">
                 <div className="text-center">
                     <h3 className="text-4xl text-blue-800">Testimonials</h3>
                     <p>This is what our customers say about World Mart!</p>

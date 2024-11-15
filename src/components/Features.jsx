@@ -6,8 +6,12 @@ const Features = () => {
     return (
         <div className="relative flex justify-center bg-blue-800 text-blue-100 mt-6 md:-mt-7 px-5">
             <div className="py-10 w-3/5 text-lg">
-                <h3 className="text-4xl font-bold">Features & <h3 className="text-yellow-500">Benefits</h3></h3>
-                <p className="mb-5">Your go-to for rapid delivery, ensuring your <p>satisfaction at the speed of light.</p></p>
+                <h3 className="text-4xl font-bold">Features &</h3>
+                <h3 className="text-4xl font-bold text-yellow-500">Benefits</h3>
+                <div className="mb-5">
+                    <p>Your go-to for rapid delivery, ensuring your</p>
+                    <p>satisfaction at the speed of light.</p>
+                </div>
                 <p><AccessTimeFilledIcon /> Get your delivery in 48 hours</p>
                 <p><PaymentsIcon /> Cash On Delinery available</p>
                 <p><CalendarTodayIcon /> 7-days easy return</p>

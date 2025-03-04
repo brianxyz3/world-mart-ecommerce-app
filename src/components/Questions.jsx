@@ -28,7 +28,7 @@ const Questions = () => {
         },
     ]
     return (
-        <div className="bg-bubbles-img bg-cover bg-center mt-20 p-2">
+        <div className="bg_bubbles bg-cover bg-center mt-20 p-2">
             <div className="text-blue-900 md:mx-20">
                 <div className="text-blue-950 text-center text-2xl md:text-4xl font-bold my-5">
                     <h4>Frequently Asked Questions</h4>

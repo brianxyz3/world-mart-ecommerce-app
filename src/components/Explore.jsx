@@ -1,10 +1,11 @@
+import { dykImg } from "../assets/images";
 import Button from "./Button";
 
 const Explore = () => {
     return (
         <div className="flex flex-wrap justify-center gap-10 py-10 px-7">
             <div>
-                <img src="../src/assets/images/dyk-image.avif" alt="" className="rounded-md" />
+                <img src={dykImg} width="275px" height="185px" alt="" className="rounded-md" />
             </div>
             <div className="flex flex-col justify-between md:w-1/3 text-gray-800 dark:text-blue-200">
                 <div>

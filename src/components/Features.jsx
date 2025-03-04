@@ -1,6 +1,7 @@
 import AccessTimeFilledIcon from '@mui/icons-material/AccessTimeFilled';
 import PaymentsIcon from '@mui/icons-material/Payments';
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
+import { featuresImg } from '../assets/images';
 
 const Features = () => {
     return (
@@ -17,7 +18,7 @@ const Features = () => {
                 <p><CalendarTodayIcon /> 7-days easy return</p>
             </div>
             <div className="size-60 md:size-80 border-2 p-5 rounded-full">
-                <img src="../src/assets/images/features-rider.jfif" alt="" className="border-2 rounded-full" />
+                <img src={featuresImg} alt="" width="280px" height="280px" className="border-2 rounded-full" />
             </div>
         </section>
     )

@@ -1,3 +1,4 @@
+import { heroImg, shoppingCartImg } from "../assets/images";
 import Button from "./Button";
 
 const Hero = () => {
@@ -21,9 +22,9 @@ const Hero = () => {
                 </Button>
                 </div>
             <div className="hidden md:flex relative w-full">
-                <img src="../src/assets/images/shopping-cart-1.avif" alt="a shopping cart filled with packages" className="w-1/5 -mt-5 rounded-r-3xl dark:opacity-65" />
+                <img src={shoppingCartImg} width="160px" height="160px" alt="a shopping cart filled with packages" className="w-1/5 -mt-5 rounded-r-3xl dark:opacity-65" />
                 <div className="flex items-end justify-end w-1/2 absolute right-0 md:bottom-10 lg:bottom-14">
-                    <img src="../src/assets/images/wm-hero-img.jpg" alt="" className="w-1/3 translate-y-3 lg:translate-y-8 lg:w-[28%] translate-x-8 lg:translate-x-16 rounded-tl-3xl dark:opacity-65" />
+                    <img src={heroImg} alt="a cartoon style image of a woman dressed in yellow pushing a filled shopping cart" width="140px" height="95px" className="w-1/3 translate-y-3 lg:translate-y-8 lg:w-[28%] translate-x-8 lg:translate-x-16 rounded-tl-3xl dark:opacity-65" />
                     <div className="text-nowrap translate-x-3 lg:translate-x-8 -rotate-90 p-1 text-xl lg:text-3xl bg-gradient-to-r from-blue-900 to-blue-800 rounded-tr-2xl">
                             <p className="text-blue-950">WORLD MART</p>
                             <p className="text-blue-600">WORLD MART</p>

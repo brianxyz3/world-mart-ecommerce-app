@@ -22,6 +22,9 @@ body {
 .logo-text-m {
     color: rgb(12, 74, 180, 0.75);
 }
+.bg_bubbles {
+    background-image: url("./assets/images/bubbles.jpg");
+}
 footer li:hover {
     transform: scaleX(1.1);
     transition: all 200ms linear;

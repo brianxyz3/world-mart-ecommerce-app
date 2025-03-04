@@ -12,7 +12,7 @@ const GetStarted = () => {
                     Start free trial
                 </Button>
                 <Button style="dark:border-blue-200 md:px-10">
-                    Start free trial
+                    Contact Us
                 </Button>
             </div>
         </div>

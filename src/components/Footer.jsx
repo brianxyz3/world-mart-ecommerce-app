@@ -2,10 +2,10 @@ import { Facebook, Instagram, Twitter, YouTube } from "@mui/icons-material";
 
 const Footer = () => {
     return (
-        <footer className="pt-20 md:px-20 pb-2 text-gray-800 bg-gray-200 dark:bg-gray-700 dark:text-blue-200">
+        <footer className="pt-20 md:px-20 pb-2 text-gray-800 bg-gray-200 dark:from-gray-600 dark:bg-gradient-to-br dark:to-black dark:text-blue-200">
             <div className="flex flex-wrap justify-evenly">
                 <div className="mb-2">
-                    <div className="logo w-16 text-2xl mb-1">
+                    <div className="logo w-16 text-2xl mb-1 dark:bg-gray-500">
                         <span className="logo-text-w">W</span><span className="logo-text-m">M</span>
                     </div>
                     <p>Choose World Mart</p>

@@ -101,21 +101,21 @@ const Navbar = ({ handleToggle }) => {
 
     return (
         <>
-            <nav className="bg-blue-800 lg:bg-white py-4 dark:bg-black dark:text-blue-200">
-                <div className="flex justify-between mx-4 lg:mx-10 mt-6 lg:items-center">
+            <nav className="w-full from-blue-600 bg-gradient-to-br to-blue-800 lg:bg-white py-2 dark:from-blue-800 dark:bg-gradient-to-br dark:to-blue-950 dark:text-blue-200">
+                <div className="flex  justify-between lg:mx-10 mt-0 lg:items-center">
                     {/* Logo */}
                     <section>
-                        <div className="logo w-16 lg:w-24 text-xl lg:text-4xl dark:bg-black"><p className="logo-text-w">W</p><p className="logo-text-m">M</p></div>
+                        <div className="logo w-16 lg:w-20 text-xl lg:text-3xl dark:bg-gray-500"><p className="logo-text-w">W</p><p className="logo-text-m">M</p></div>
                     </section>
 
                     <section className={`lg:flex ${isOpen ? "block" : "hidden"} justify-between w-[87%]`}>
                         <div className="w-2/3 mx-auto flex justify-center lg:border lg:bg-blue-800  text-blue-100 rounded-2xl py-1">
-                            <div className="flex flex-col lg:flex-row text-center lg:justify-between gap-1 lg:mt-0 mt-8">
+                            <div className="flex flex-col lg:flex-row text-center lg:justify-between lg:items-center gap-1 lg:mt-0 mt-8">
                                 {
                                     navItems.map((item, idx) => (
-                                        <a key={idx} href={`#${item.link}`} className="border-b-2 px-5 lg:py-2 p-1 lg:border-b-0 hover:bg-blue-900 hover:rounded-2xl duration-300">{item.title}</a>
+                                        <a key={idx} href={`#${item.link}`} className="border-b-2 px-5 lg:py-1 p-1 lg:border-b-0 hover:bg-blue-900 hover:rounded-2xl  hover:scale-110 duration-300">{item.title}</a>
                                     ))}
-                                <a className="border-b-2 px-5 lg:py-2 p-1 lg:border-b-0 hover:bg-blue-900 hover:rounded-2xl cursor-pointer flex flex-nowrap">Services <ExpandMoreIcon /></a>
+                                <a className="border-b-2 px-5 lg:py-1 p-1 lg:border-b-0 hover:bg-blue-900 hover:rounded-2xl cursor-pointer flex flex-nowrap hover:scale-110 duration-300">Services <ExpandMoreIcon /></a>
                             </div>
                         </div>
                         <div className="hidden lg:flex items-center ms-4 my-0">
@@ -137,9 +137,9 @@ const Navbar = ({ handleToggle }) => {
                         </div>
                     </section>
                     {/* Menu Icon for Mobile */}
-                    <section>
+                    <section className="lg:hidden">
                         <div className="flex items-center gap-x-4">
-                            <div className="lg:hidden duration-150 border-2 border-transparent hover:border-blue-200 hover:rounded-md h-fit w-auto">
+                            <div className="duration-150 border-2 border-transparent hover:border-blue-200 hover:rounded-md h-fit w-auto">
                         <button onClick={toggleNavbar}>
                             {isOpen ? (
                                 <CloseIcon className="text-blue-200" />
@@ -148,7 +148,7 @@ const Navbar = ({ handleToggle }) => {
                             )}
                                 </button>
                             </div>
-                            <div className="md:hidden">
+                            <div className="">
                                 <FormGroup>
                                     <FormControlLabel
                                         control={<MaterialUISwitch sx={{ m: 1 }} checked={checked}

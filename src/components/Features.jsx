@@ -4,8 +4,8 @@ import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 
 const Features = () => {
     return (
-        <div className="relative flex justify-center bg-blue-800 text-blue-100 mt-6 md:-mt-7 px-5">
-            <div className="py-10 w-3/5 text-lg">
+        <section className="relative flex justify-center flex-wrap-reverse bg-blue-800 text-blue-100 mt-8 md:mt-0 md:-translate-y-7 px-5 py-2">
+            <div className="py-10 md:w-3/5 text-lg">
                 <h3 className="text-4xl font-bold">Features &</h3>
                 <h3 className="text-4xl font-bold text-yellow-500">Benefits</h3>
                 <div className="mb-5">
@@ -16,10 +16,10 @@ const Features = () => {
                 <p><PaymentsIcon /> Cash On Delinery available</p>
                 <p><CalendarTodayIcon /> 7-days easy return</p>
             </div>
-            <div className="w-1/4 mt-10 border-2 p-5 rounded-full">
+            <div className="size-60 md:size-80 border-2 p-5 rounded-full">
                 <img src="../src/assets/images/features-rider.jfif" alt="" className="border-2 rounded-full" />
             </div>
-        </div>
+        </section>
     )
 }
 

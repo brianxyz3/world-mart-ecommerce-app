@@ -22,8 +22,7 @@ body {
 .logo-text-m {
     color: rgb(12, 74, 180, 0.75);
 }
-.testimonial-img {
-    width: 200px;
-    aspect-ratio: 1;
-    border-radius: 50%;
+footer li:hover {
+    transform: scaleX(1.1);
+    transition: all 200ms linear;
 }

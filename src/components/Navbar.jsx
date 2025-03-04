@@ -80,26 +80,45 @@ const Navbar = ({ handleToggle }) => {
         },
     }))
 
+    const navItems = [
+        {
+            title: "Home",
+            link: "home"
+        },
+        {
+            title: "About",
+            link: "about"
+        },
+        {
+            title: "Fashion",
+            link: "fashion"
+        },
+        {
+            title: "Offers",
+            link: "offers"
+        },
+    ]
+
     return (
         <>
-            <nav className="bg-blue-800 md:bg-white py-4 dark:bg-black dark:text-blue-200">
-                <div className="flex justify-between mx-4 md:mx-10 mt-6 md:items-center">
+            <nav className="bg-blue-800 lg:bg-white py-4 dark:bg-black dark:text-blue-200">
+                <div className="flex justify-between mx-4 lg:mx-10 mt-6 lg:items-center">
                     {/* Logo */}
-                    <div>
-                        <div className="logo w-24 text-4xl dark:bg-black"><p className="logo-text-w">W</p><p className="logo-text-m">M</p></div>
-                    </div>
+                    <section>
+                        <div className="logo w-16 lg:w-24 text-xl lg:text-4xl dark:bg-black"><p className="logo-text-w">W</p><p className="logo-text-m">M</p></div>
+                    </section>
 
-                    <div className={`md:flex ${isOpen ? "block" : "hidden"} justify-between w-5/6`}>
-                        <div className="w-2/3 flex justify-center md:border md:bg-blue-800  text-blue-100 rounded-2xl py-1">
-                            <div className="flex flex-col md:flex-row text-center md:justify-between gap-1 md:mt-0 mt-8 ">
-                                <a href="#home" className="border-b-2  px-5 md:py-2 p-1 md:border-b-0 hover:bg-blue-900 hover:rounded-2xl">Home</a>
-                                <a href="#about" className="border-b-2 px-5 md:py-2 p-1 md:border-b-0 hover:bg-blue-900 hover:rounded-2xl">About</a>
-                                <a href="#fashion" className="border-b-2 px-5 md:py-2 p-1 md:border-b-0 hover:bg-blue-900 hover:rounded-2xl">Fashion</a>
-                                <a href="#services" className="border-b-2 px-5 md:py-2 p-1 md:border-b-0 hover:bg-blue-900 hover:rounded-2xl">Offers</a>
-                                <p className="border-b-2 px-5 md:py-2 p-1 md:border-b-0 hover:bg-blue-900 hover:rounded-2xl cursor-pointer">Services <ExpandMoreIcon /></p>
+                    <section className={`lg:flex ${isOpen ? "block" : "hidden"} justify-between w-[87%]`}>
+                        <div className="w-2/3 mx-auto flex justify-center lg:border lg:bg-blue-800  text-blue-100 rounded-2xl py-1">
+                            <div className="flex flex-col lg:flex-row text-center lg:justify-between gap-1 lg:mt-0 mt-8">
+                                {
+                                    navItems.map((item, idx) => (
+                                        <a key={idx} href={`#${item.link}`} className="border-b-2 px-5 lg:py-2 p-1 lg:border-b-0 hover:bg-blue-900 hover:rounded-2xl duration-300">{item.title}</a>
+                                    ))}
+                                <a className="border-b-2 px-5 lg:py-2 p-1 lg:border-b-0 hover:bg-blue-900 hover:rounded-2xl cursor-pointer flex flex-nowrap">Services <ExpandMoreIcon /></a>
                             </div>
                         </div>
-                        <div className="hidden md:flex items-center my-0">
+                        <div className="hidden lg:flex items-center ms-4 my-0">
                             <FormGroup>
                                 <FormControlLabel
                                     control={<MaterialUISwitch sx={{ m: 1 }} checked={checked}
@@ -113,20 +132,32 @@ const Navbar = ({ handleToggle }) => {
                                 <ShoppingBagOutlined />
                             </IconButton>
                         </div>
-                        <div className="flex items-center justify-center gap-2 md:bg-blue-800 text-center text-blue-100 md:border md:rounded-3xl md:my-2 md:px-10 md:py-1 cursor-pointer hover:rounded-3xl hover:font-bold hover:text-blue-300 hover:my-1 hover:px-11 hover:shadow=xl">
+                        <div className="flex items-center justify-center gap-2 lg:bg-blue-800 text-center text-blue-100 duration-150 lg:border lg:rounded-3xl lg:my-2 lg:px-10 py-1 cursor-pointer hover:rounded-3xl hover:scale-105 hover:text-blue-300 hover:shadow-xl">
                             <LoginIcon /><p> Login</p>
                         </div>
-                    </div>
+                    </section>
                     {/* Menu Icon for Mobile */}
-                    <div className="md:hidden hover:border-2 hover:rounded-md h-fit w-auto">
+                    <section>
+                        <div className="flex items-center gap-x-4">
+                            <div className="lg:hidden duration-150 border-2 border-transparent hover:border-blue-200 hover:rounded-md h-fit w-auto">
                         <button onClick={toggleNavbar}>
                             {isOpen ? (
                                 <CloseIcon className="text-blue-200" />
                             ) : (
                                 <MenuIcon className="text-blue-200" />
                             )}
-                        </button>
-                    </div>
+                                </button>
+                            </div>
+                            <div className="md:hidden">
+                                <FormGroup>
+                                    <FormControlLabel
+                                        control={<MaterialUISwitch sx={{ m: 1 }} checked={checked}
+                                            onChange={handleClick} />}
+                                    />
+                                </FormGroup>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </nav>
         </>

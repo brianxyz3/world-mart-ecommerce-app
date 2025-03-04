@@ -2,7 +2,7 @@ import { Facebook, Instagram, Twitter, YouTube } from "@mui/icons-material";
 
 const Footer = () => {
     return (
-        <footer className="pt-20 px-20 pb-2 text-gray-800 bg-gray-200 dark:bg-gray-700 dark:text-blue-200">
+        <footer className="pt-20 md:px-20 pb-2 text-gray-800 bg-gray-200 dark:bg-gray-700 dark:text-blue-200">
             <div className="flex flex-wrap justify-evenly">
                 <div className="mb-2">
                     <div className="logo w-16 text-2xl mb-1">
@@ -14,19 +14,19 @@ const Footer = () => {
                 <div className="mb-2">
                     <h6 className="mb-4 text-black font-bold text-xl">Useful links</h6>
                     <ul className="flex flex-col gap-4">
-                        <li><a href="about">About Us</a></li>
-                        <li><a href="about">Features</a></li>
-                        <li><a href="about">Testimonials</a></li>
-                        <li><a href="about">FAQ</a></li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/features">Features</a></li>
+                        <li><a href="/testimonials">Testimonials</a></li>
+                        <li><a href="/faq">FAQ</a></li>
                     </ul>
                 </div>
                 <div className="mb-2">
                     <h6 className="mb-4 text-black font-bold text-xl">Main Menu</h6>
                     <ul className="flex flex-col gap-4">
-                        <li><a href="about">Home</a></li>
-                        <li><a href="about">Features</a></li>
-                        <li><a href="about">Offers</a></li>
-                        <li><a href="about">Products</a></li>
+                        <li><a href="/home">Home</a></li>
+                        <li><a href="/features">Features</a></li>
+                        <li><a href="/offers">Offers</a></li>
+                        <li><a href="/products">Products</a></li>
                     </ul>
                 </div>
                 <div className="mb-2">
@@ -38,12 +38,12 @@ const Footer = () => {
                     </ul>
                 </div>
             </div>
-            <div className="flex justify-center gap-3 mt-6">
+            <div className="flex flex-wrap justify-center items-center gap-3 mt-3">
                 <Facebook />
                 <Instagram />
                 <Twitter />
                 <YouTube />
-                <p>Copyright &copy; 2023 Brianxyz | All rights reserved</p>
+                <p className="text-xs">Copyright &copy; 2023 Brianxyz | All rights reserved</p>
             </div>
         </footer>
     )
